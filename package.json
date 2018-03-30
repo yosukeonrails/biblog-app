@@ -8,14 +8,20 @@
     "babel": "babel",
     "webpack": "webpack",
     "dev": "webpack --mode development js/index.js --output ./build/bundle.js",
-    "build": "webpack --mode production ./foo/src/js/index.js --output ./build/index.js"
+    "build": "webpack --mode production ./foo/src/js/index.js --output ./build/index.js",
+    "watch": "webpack --mode development js/index.js --output ./build/bundle.js --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "r": "0.0.5",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

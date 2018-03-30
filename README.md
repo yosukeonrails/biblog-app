@@ -13,7 +13,7 @@ Webpack
 #Front End  
   
 React/Redux
-React-Router 
+React-Router 4
 Redux Thunk 
 
 #Back-End
@@ -49,16 +49,17 @@ done
 # Put it in Git Hub
 done
 # Install React/Redux dependancies 
-
+done
 # Hello World with Node and Express
 done
 # Hello World with Docker 
 
-# Hello World with React/ React-Router
- 
+# Hello World with React/ React-Router 4
+ done
 # Use Webpack to Bundle code
  done
-# Hello World using React/ Redux
+
+# Hello World using Redux
 
 # Hello World from Mongo/Mongoose
 
