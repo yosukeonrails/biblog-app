@@ -2,8 +2,9 @@ const path = require('path');
 
 const config = {
     entry: './js/index.js',
-    output: {
-      path: path.resolve(__dirname, 'build'),
+    mode:'development',
+    output: {   
+      path: path.resolve(__dirname + 'build'),
       filename: 'bundle.js'
     },
     watch:true,

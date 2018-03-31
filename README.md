@@ -52,17 +52,16 @@ done
 done
 # Hello World with Node and Express
 done
-# Hello World with Docker 
-
 # Hello World with React/ React-Router 4
  done
 # Use Webpack to Bundle code
  done
+# Hello World from Mongo/Mongoose
+done
+# Create Test Environment with Karma and Jasmine 
+done
+
+
+# Hello World with Docker
 
 # Hello World using Redux
-
-# Hello World from Mongo/Mongoose
-
-# Create Test Environment with Karma and Jasmine 
-
-
