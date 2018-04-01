@@ -10,11 +10,61 @@ import {BrowserRouter, Route,Link, NavLink, HashRouter, Switch } from 'react-rou
               <div> Hello React Router 4 r ! 
                     <NavLink to={'/'}> home </NavLink>
                     <NavLink to={'/about'}> about  </NavLink>
+                    <NavLink to={'/create'}> create  </NavLink>
             </div>
           )
       }
 
  }
+
+ class Create extends React.Component{
+
+    constructor(props){
+        super(props)
+
+       this.state={
+           textarea:"",
+           input:""
+       } 
+    }
+
+    handleSubmit(){
+        
+    }
+
+    handleInputs(e , target){
+            
+        this.setState({
+            [target]:e.target.value
+        })
+
+    }
+
+
+    render(){
+        console.log(this.state)
+
+        return(
+            <div>
+
+                <h1> Create </h1>
+                   
+                   <div>
+                        <input ref="input" onChange={ (event)=>{ this.handleInputs(event, "input")} } ></input>
+                   </div>
+                    
+                    
+                    <div>
+                        <textarea  ref="textarea" onChange={ (event)=>{ this.handleInputs(event, "textarea")} }  ></textarea>
+                    </div>
+                    <button> Submit </button>
+            </div>
+        )
+    }
+
+}
+
+
 
  class Home extends React.Component{
 
@@ -45,6 +95,8 @@ class Main extends React.Component{
                 <Switch>
                     <Route  exact path='/' component={Home}/>
                     <Route path='/about' exact component={About}/>
+                    <Route path='/create' exact component={Create}/>
+
                 </Switch>
             </main>  
         )
