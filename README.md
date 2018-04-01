@@ -61,7 +61,15 @@ done
 # Create Test Environment with Karma and Jasmine 
 done
 
+# Connect the Mongo with Docker 
+https://docs.docker.com/samples/library/mongo/#shared-tags
+
+https://medium.com/@pablo_ezequiel/creating-a-docker-image-with-mongodb-4c8aa3f828f2
 
 # Hello World with Docker
 
+#Authentication using Auth0
+
 # Hello World using Redux
+
+

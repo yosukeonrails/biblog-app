@@ -1,17 +1,16 @@
 var message= require('../css/index.less'); // loading the main css file
 var React = require('react');
 var ReactDOM = require('react-dom');
-import {BrowserRouter, Route,Link, NavLink } from 'react-router-dom'
+import {BrowserRouter, Route,Link, NavLink, HashRouter, Switch } from 'react-router-dom'
 
- class FirstClass extends React.Component{
+ class Header extends React.Component{
 
       render(){
           return(
               <div> Hello React Router 4 r ! 
-                    <NavLink to={'/home'}> home </NavLink>
+                    <NavLink to={'/'}> home </NavLink>
                     <NavLink to={'/about'}> about  </NavLink>
-                
-                   </div>
+            </div>
           )
       }
 
@@ -38,16 +37,44 @@ class About extends React.Component{
 }
 
 
+class Main extends React.Component{
+
+    render(){
+        return(
+            <main>
+                <Switch>
+                    <Route  exact path='/' component={Home}/>
+                    <Route path='/about' exact component={About}/>
+                </Switch>
+            </main>  
+        )
+    }
+
+}
+
+
+
+class App extends React.Component{
+
+    render(){
+        return(
+            <div>
+               <Header/>
+               <Main/>
+            </div>
+        )
+    }
+
+}
+
+
+
 
 
 ReactDOM.render(
-    <BrowserRouter>
-       <div>
-       <Route path='/' component={FirstClass}/>
-       <Route path='/home' component={Home}/>
-       <Route path='/about' component={About}/>
-       </div>
-    </BrowserRouter>
+    <HashRouter>
+      <App />
+    </HashRouter>
  ,
 document.getElementById('app')
 )
